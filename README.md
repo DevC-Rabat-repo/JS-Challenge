@@ -12,7 +12,7 @@ Create a branch in your project where you can safely experiment and make changes
 - Add commits in new branch
 
 # ~ OPEN A PULL REQUEST
-Use a pull request to get feedback on your changes from people across the world.
+Use a pull request to get feedback on your changes before and after going live.
 
 - Discuss and review pull request
 
