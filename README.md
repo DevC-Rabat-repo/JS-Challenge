@@ -24,7 +24,7 @@ Merge your changes into your master branch and deploy your code.
 # If you are a beginner and wants to start your open source journey then 
 ## 👉 1. *Fork* this repository
 ## 👉 2. *Clone* on your system
-## 👉 3. Create a *Branch* with your name in it
+## 👉 3. Create a *Branch* with chore/your-name
 ## 👉 4. Add a docs folder with  ```-yourname```
 ## 👉 5. *Add* & *Commit* changes
 ## 👉 6. *Push* changes to GitHub
