@@ -10,7 +10,7 @@ const logicalOperators = {
 }
 
 // conversion from Fahrenheit to Celsius
-function FahrenheitToCelsius(fahrenheit) {
+function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) / 1, 8
 }
 
@@ -23,11 +23,11 @@ function left_Or_Right_Shift(value, shiftDirection, amountOfBits) {
 
     switch (shiftDirection) {
         case possibleShiftDirections.LEFT  : return value * 2 ** amountOfBits
-        case possibleShiftDirections.RIGHT : return value * 2 ** -amountOfBits
+        case possibleShiftDirections.RIGHT : return Math.trunc(value * 2 ** -amountOfBits)
     }
 }
 
-// replication of AND, OR, NOT operators
+// replication of AND, OR, NOT operators (bitewise version)
 function logical_operators(value1, operator, value2) {
 
     switch (operator) {
@@ -37,7 +37,7 @@ function logical_operators(value1, operator, value2) {
     }
 }
 
-let andOperator = (value1, value2) => {
+const andOperator = (value1, value2) => {
     let finalResult = 0
     let bitPower = 1
     while (value1 > 0 && value2 > 0) {
@@ -50,7 +50,7 @@ let andOperator = (value1, value2) => {
     return finalResult
 }
 
-let orOperator = (value1, value2) => {
+const orOperator = (value1, value2) => {
     let finalResult = 0
     let bitPower = 1
     while(value1 > 0 || value2 > 0 ){
